@@ -15,8 +15,8 @@ pdfFile = open(pdfFiles[0], 'rb')
 
 pdfReader = PyPDF2.PdfFileReader(pdfFile)
 
-print(pdfReader.numPages)
+print(f'pages:{pdfReader.numPages}')
 
-print(pdfReader.isEncrypted)
+print(f'is encrypted:{pdfReader.isEncrypted}')
 
 #print(pdfReader.getPage(0))
